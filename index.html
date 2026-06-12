@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galaxy Official — CBSE Class 12 Study Materials by Thunderstudy</title>
+<meta name="description" content="Premium CBSE Class 12 study materials — Sample Papers, Boards Dominator, Boards Killer, and Question Banks for Science, Commerce & Humanities. By Thunderstudy x Galaxy Official.">
+<meta property="og:title" content="Galaxy Official — CBSE Class 12 Study Materials">
+<meta property="og:description" content="Premium CBSE Class 12 study materials by Thunderstudy. Science, Commerce & Humanities.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf7f5;
+    --bg2: #f0ede8;
+    --ink: #213547;
+    --ink-muted: #5a6a75;
+    --ink-light: #8a9aa5;
+    --border: #e0dbd4;
+    --gold: #b8860b;
+    --gold-light: #d4a017;
+    --white: #ffffff;
+    --card-bg: #ffffff;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', system-ui, sans-serif; background: var(--bg); color: var(--ink); line-height: 1.6; }
+
+  /* NAV */
+  nav {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(250,247,245,0.92);
+    backdrop-filter: blur(18px);
+    border-bottom: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 40px; height: 64px;
+  }
+  .nav-brand { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; color: var(--ink); text-decoration: none; letter-spacing: -0.3px; }
+  .nav-brand span { color: var(--gold); }
+  .nav-links { display: flex; gap: 32px; }
+  .nav-links a { font-size: 13px; font-weight: 600; letter-spacing: 0.8px; text-transform: uppercase; color: var(--ink-muted); text-decoration: none; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--ink); }
+  .nav-cta { font-size: 13px; font-weight: 600; background: var(--ink); color: #fff; padding: 9px 20px; border-radius: 3px; text-decoration: none; letter-spacing: 0.3px; transition: opacity 0.2s; }
+  .nav-cta:hover { opacity: 0.85; }
+
+  /* HERO */
+  .hero {
+    background: var(--ink);
+    color: #fff;
+    padding: 120px 40px 100px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: repeating-linear-gradient(0deg, transparent, transparent 59px, rgba(255,255,255,0.03) 60px),
+                repeating-linear-gradient(90deg, transparent, transparent 59px, rgba(255,255,255,0.03) 60px);
+  }
+  .hero-eyebrow { font-size: 11px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: var(--gold-light); margin-bottom: 24px; }
+  .hero-title { font-family: 'Playfair Display', serif; font-size: clamp(52px, 8vw, 96px); font-weight: 900; line-height: 1.05; letter-spacing: -1.5px; margin-bottom: 24px; position: relative; }
+  .hero-title .accent { color: var(--gold-light); }
+  .hero-sub { font-size: 18px; font-weight: 300; color: rgba(255,255,255,0.72); max-width: 560px; margin: 0 auto 48px; line-height: 1.6; }
+  .hero-pills { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-bottom: 52px; }
+  .hero-pill { font-size: 12px; font-weight: 600; letter-spacing: 0.5px; border: 1px solid rgba(255,255,255,0.25); color: rgba(255,255,255,0.85); padding: 6px 16px; border-radius: 2px; }
+  .hero-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+  .btn-primary { background: var(--gold-light); color: var(--ink); font-size: 14px; font-weight: 700; padding: 14px 32px; border-radius: 3px; text-decoration: none; letter-spacing: 0.5px; transition: opacity 0.2s; }
+  .btn-primary:hover { opacity: 0.88; }
+  .btn-ghost { border: 1px solid rgba(255,255,255,0.4); color: #fff; font-size: 14px; font-weight: 600; padding: 14px 32px; border-radius: 3px; text-decoration: none; letter-spacing: 0.5px; transition: background 0.2s; }
+  .btn-ghost:hover { background: rgba(255,255,255,0.08); }
+
+  /* SECTION WRAPPER */
+  .section { padding: 100px 40px; }
+  .section.parchment { background: var(--bg2); }
+  .section.white { background: var(--white); }
+  .section-label { font-size: 11px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
+  .section-title { font-family: 'Playfair Display', serif; font-size: clamp(32px, 5vw, 52px); font-weight: 700; line-height: 1.1; letter-spacing: -0.5px; margin-bottom: 16px; color: var(--ink); }
+  .section-sub { font-size: 17px; font-weight: 300; color: var(--ink-muted); max-width: 560px; line-height: 1.6; }
+  .section-header { margin-bottom: 60px; }
+  .container { max-width: 1240px; margin: 0 auto; }
+
+  /* STATS BAR */
+  .stats-bar { background: var(--gold); padding: 0 40px; }
+  .stats-inner { max-width: 1240px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); }
+  .stat-item { padding: 28px 24px; border-right: 1px solid rgba(255,255,255,0.25); text-align: center; }
+  .stat-item:last-child { border-right: none; }
+  .stat-num { font-family: 'Playfair Display', serif; font-size: 36px; font-weight: 700; color: var(--ink); line-height: 1; }
+  .stat-label { font-size: 12px; font-weight: 600; letter-spacing: 0.5px; color: rgba(33,53,71,0.75); margin-top: 4px; text-transform: uppercase; }
+
+  /* TAB NAV */
+  .tab-nav { display: flex; gap: 0; border-bottom: 1px solid var(--border); margin-bottom: 52px; overflow-x: auto; }
+  .tab-btn { font-size: 13px; font-weight: 600; letter-spacing: 0.8px; text-transform: uppercase; color: var(--ink-muted); padding: 14px 28px; border: none; background: none; cursor: pointer; border-bottom: 3px solid transparent; white-space: nowrap; transition: all 0.2s; }
+  .tab-btn.active { color: var(--ink); border-bottom-color: var(--ink); }
+  .tab-btn:hover:not(.active) { color: var(--ink); }
+
+  /* BOOK GRID */
+  .book-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 28px; }
+  .book-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 4px; overflow: hidden; transition: transform 0.25s, box-shadow 0.25s; cursor: pointer; }
+  .book-card:hover { transform: translateY(-6px); box-shadow: rgba(33,53,71,0.12) 0 16px 40px; }
+  .book-cover { width: 100%; aspect-ratio: 3/4; object-fit: cover; display: block; }
+  .book-info { padding: 16px; border-top: 1px solid var(--border); }
+  .book-subject { font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); margin-bottom: 6px; }
+  .book-title { font-family: 'Playfair Display', serif; font-size: 16px; font-weight: 700; color: var(--ink); line-height: 1.3; margin-bottom: 8px; }
+  .book-desc { font-size: 12px; color: var(--ink-muted); line-height: 1.5; margin-bottom: 14px; }
+  .book-footer { display: flex; align-items: center; justify-content: space-between; }
+  .book-price { display: flex; align-items: center; gap: 6px; }
+  .price-free { font-size: 15px; font-weight: 700; color: #1a8a4a; }
+  .price-was { font-size: 12px; color: var(--ink-light); text-decoration: line-through; }
+  .book-btn { font-size: 11px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--ink); padding-bottom: 1px; transition: opacity 0.2s; }
+  .book-btn:hover { opacity: 0.6; }
+
+  /* FEATURED SINGLE BOOK */
+  .featured-book { display: grid; grid-template-columns: 340px 1fr; gap: 80px; align-items: center; }
+  .featured-cover { border-radius: 4px; overflow: hidden; box-shadow: rgba(33,53,71,0.22) 3px 5px 30px; }
+  .featured-cover img { width: 100%; display: block; }
+  .featured-tag { display: inline-block; font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; background: var(--gold-light); color: var(--ink); padding: 4px 12px; border-radius: 2px; margin-bottom: 20px; }
+  .featured-title { font-family: 'Playfair Display', serif; font-size: 42px; font-weight: 900; line-height: 1.1; letter-spacing: -0.5px; margin-bottom: 12px; }
+  .featured-series { font-size: 15px; font-weight: 300; color: var(--ink-muted); margin-bottom: 32px; }
+  .features-list { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 40px; }
+  .feat-item { display: flex; align-items: flex-start; gap: 10px; }
+  .feat-check { width: 18px; height: 18px; background: var(--ink); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px; }
+  .feat-check svg { width: 10px; height: 10px; fill: none; stroke: #fff; stroke-width: 2.5; }
+  .feat-text { font-size: 14px; color: var(--ink); font-weight: 400; }
+  .featured-price-row { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+  .badge-free { font-size: 22px; font-weight: 700; color: #1a8a4a; }
+  .badge-was { font-size: 15px; color: var(--ink-light); text-decoration: line-through; }
+  .badge-label { font-size: 11px; color: var(--ink-muted); font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; }
+  .featured-btn { display: inline-block; background: var(--ink); color: #fff; font-size: 13px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; padding: 14px 32px; border-radius: 3px; text-decoration: none; transition: opacity 0.2s; margin-right: 16px; }
+  .featured-btn:hover { opacity: 0.82; }
+  .featured-btn-ghost { display: inline-block; border: 1px solid var(--ink); color: var(--ink); font-size: 13px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; padding: 14px 28px; border-radius: 3px; text-decoration: none; transition: background 0.2s; }
+  .featured-btn-ghost:hover { background: var(--ink); color: #fff; }
+
+  /* EDITORIAL BAND */
+  .editorial-band { background: var(--ink); color: #fff; padding: 80px 40px; text-align: center; }
+  .editorial-band .section-title { color: #fff; }
+  .editorial-band .section-sub { color: rgba(255,255,255,0.65); margin: 0 auto 48px; }
+
+  /* COLLECTION CARDS */
+  .collection-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: 4px; overflow: hidden; }
+  .col-card { background: var(--card-bg); padding: 36px 32px; }
+  .col-card:hover { background: var(--bg2); }
+  .col-num { font-family: 'Playfair Display', serif; font-size: 48px; font-weight: 700; color: var(--border); line-height: 1; margin-bottom: 16px; }
+  .col-title { font-size: 15px; font-weight: 700; color: var(--ink); margin-bottom: 8px; }
+  .col-sub { font-size: 13px; color: var(--ink-muted); line-height: 1.5; }
+
+  /* FOOTER */
+  footer { background: var(--bg2); border-top: 1px solid var(--border); padding: 64px 40px 40px; }
+  .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; max-width: 1240px; margin: 0 auto 48px; }
+  .footer-brand { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; color: var(--ink); margin-bottom: 12px; }
+  .footer-brand span { color: var(--gold); }
+  .footer-tagline { font-size: 13px; color: var(--ink-muted); line-height: 1.6; max-width: 240px; }
+  .footer-col h4 { font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--ink); margin-bottom: 16px; }
+  .footer-col a { display: block; font-size: 13px; color: var(--ink-muted); text-decoration: none; margin-bottom: 10px; transition: color 0.2s; }
+  .footer-col a:hover { color: var(--ink); }
+  .footer-bottom { max-width: 1240px; margin: 0 auto; border-top: 1px solid var(--border); padding-top: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+  .footer-copy { font-size: 12px; color: var(--ink-light); }
+
+  /* TAB PANELS */
+  .tab-panel { display: none; }
+  .tab-panel.active { display: block; }
+
+  /* RIBBON */
+  .ribbon { position: absolute; top: 12px; left: 12px; font-size: 10px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; background: var(--gold-light); color: var(--ink); padding: 3px 10px; border-radius: 2px; }
+
+  /* BOOK CARD WRAPPER */
+  .book-card { position: relative; }
+
+  @media (max-width: 768px) {
+    nav { padding: 0 20px; }
+    .nav-links { display: none; }
+    .hero { padding: 80px 20px 60px; }
+    .section { padding: 60px 20px; }
+    .stats-inner { grid-template-columns: repeat(2, 1fr); }
+    .stat-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.25); }
+    .featured-book { grid-template-columns: 1fr; gap: 40px; }
+    .featured-cover { max-width: 280px; }
+    .features-list { grid-template-columns: 1fr; }
+    .collection-grid { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+    .book-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-brand" href="#">Galaxy <span>Official</span></a>
+  <div class="nav-links">
+    <a href="#class12">Class 12</a>
+    <a href="#science">Science</a>
+    <a href="#commerce">Commerce</a>
+    <a href="#humanities">Humanities</a>
+    <a href="#qbank">Question Bank</a>
+  </div>
+  <a class="nav-cta" href="https://wondermayank.github.io/" target="_blank">Get Free ↗</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <p class="hero-eyebrow">By Thunderstudy × Galaxy Official</p>
+  <h1 class="hero-title">Study Smart.<br><span class="accent">Score Higher.</span></h1>
+  <p class="hero-sub">Premium CBSE Class 12 study materials — Sample Papers, Boards Dominator, Boards Killer & Question Banks. All free.</p>
+  <div class="hero-pills">
+    <span class="hero-pill">CBSE 2026</span>
+    <span class="hero-pill">20+ Sample Papers</span>
+    <span class="hero-pill">Topper Answer Sheets</span>
+    <span class="hero-pill">PYQs Included</span>
+    <span class="hero-pill">Mind Maps</span>
+    <span class="hero-pill">Free Download</span>
+  </div>
+  <div class="hero-btns">
+    <a href="#class12" class="btn-primary">Browse All Books</a>
+    <a href="https://wondermayank.github.io/" target="_blank" class="btn-ghost">Visit Thunderstudy ↗</a>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div class="stat-item"><div class="stat-num">20+</div><div class="stat-label">Sample Papers</div></div>
+    <div class="stat-item"><div class="stat-num">12+</div><div class="stat-label">Subjects Covered</div></div>
+    <div class="stat-item"><div class="stat-num">5000+</div><div class="stat-label">Questions in QB</div></div>
+    <div class="stat-item"><div class="stat-num">₹0</div><div class="stat-label">Price — Completely Free</div></div>
+  </div>
+</div>
+
+<!-- FEATURED BOOK -->
+<section class="section white" id="featured">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-label">Editor's Pick</p>
+      <h2 class="section-title">20+ CBSE Sample Papers<br>— Business Studies</h2>
+    </div>
+    <div class="featured-book">
+      <div class="featured-cover">
+        <img src="https://raw.githubusercontent.com/commercesehoga/books/main/photo_6334467078567431810_w.jpg"
+             onerror="this.src='https://raw.githubusercontent.com/commercesehoga/commercesehoga.github.io/refs/heads/main/photo_6334467078567431810_w.jpg'"
+             alt="Business Studies Sample Papers 2026 by Galaxy Official" loading="lazy">
+      </div>
+      <div class="featured-content">
+        <span class="featured-tag">Bestseller — Commerce</span>
+        <h3 class="featured-title">20+ CBSE Sample Papers<br>Business Studies</h3>
+        <p class="featured-series">Boards 2026 Examination · By King · IMP by Thunder</p>
+        <div class="features-list">
+          <div class="feat-item"><div class="feat-check"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div><span class="feat-text">CBSE SQP Included</span></div>
+          <div class="feat-item"><div class="feat-check"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div><span class="feat-text">5 Year PYQs</span></div>
+          <div class="feat-item"><div class="feat-check"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div><span class="feat-text">Keywords & Acronyms</span></div>
+          <div class="feat-item"><div class="feat-check"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div><span class="feat-text">Topper Answer Sheet</span></div>
+          <div class="feat-item"><div class="feat-check"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div><span class="feat-text">50 Most IMP Questions</span></div>
+          <div class="feat-item"><div class="feat-check"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div><span class="feat-text">NCERT Underline</span></div>
+          <div class="feat-item"><div class="feat-check"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div><span class="feat-text">One Page One Chapter</span></div>
+          <div class="feat-item"><div class="feat-check"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div><span class="feat-text">As Per Latest CBSE 2026</span></div>
+        </div>
+        <div class="featured-price-row" style="margin-bottom:28px;">
+          <div>
+            <div class="badge-label">Price</div>
+            <div style="display:flex;align-items:baseline;gap:10px;">
+              <span class="badge-free">FREE</span>
+              <span class="badge-was">₹299</span>
+            </div>
+          </div>
+        </div>
+        <a href="https://wondermayank.github.io/" target="_blank" class="featured-btn">Download Free ↗</a>
+        <a href="#commerce" class="featured-btn-ghost">More Commerce</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COLLECTION INFO -->
+<div class="editorial-band">
+  <div class="container">
+    <p class="section-label" style="color:var(--gold-light);">Three Flagship Series</p>
+    <h2 class="section-title" style="font-size:36px;margin-bottom:12px;">Everything you need for CBSE 2026</h2>
+    <p class="section-sub">Galaxy Official and Thunderstudy bring three powerful series — each crafted for a different exam goal.</p>
+  </div>
+  <div class="container" style="margin-top:48px;">
+    <div class="collection-grid">
+      <div class="col-card">
+        <div class="col-num">01</div>
+        <div class="col-title">20+ Sample Papers</div>
+        <div class="col-sub">Full-length papers with CBSE SQP, PYQs, Topper Answer Sheets and subject-specific bonus content. Commerce focus.</div>
+      </div>
+      <div class="col-card">
+        <div class="col-num">02</div>
+        <div class="col-title">Boards Dominator / Killer</div>
+        <div class="col-sub">High-priority topic packages for Science & Humanities. Most repeated questions, Mind Maps, Mock Tests, Chapter-wise PYQs.</div>
+      </div>
+      <div class="col-card">
+        <div class="col-num">03</div>
+        <div class="col-title">Boards Pro Series</div>
+        <div class="col-sub">5000+ question banks for deep practice. Chapterwise, Case Studies, Assertion & Reasoning — the complete practice arsenal.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ALL BOOKS — TABBED -->
+<section class="section" id="class12">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-label">Class 12 — All Subjects</p>
+      <h2 class="section-title">Browse by Stream</h2>
+      <p class="section-sub">All books are free. Click any book to download from Thunderstudy's platform.</p>
+    </div>
+
+    <div class="tab-nav">
+      <button class="tab-btn active" onclick="showTab('science')">Science</button>
+      <button class="tab-btn" onclick="showTab('commerce')">Commerce</button>
+      <button class="tab-btn" onclick="showTab('humanities')">Humanities</button>
+      <button class="tab-btn" onclick="showTab('qbank')">Question Bank</button>
+    </div>
+
+    <!-- SCIENCE -->
+    <div id="tab-science" class="tab-panel active">
+      <div class="book-grid">
+
+        <div class="book-card">
+          <span class="ribbon">New</span>
+          <img class="book-cover" src="https://raw.githubusercontent.com/commercesehoga/books/main/photo_4920531370476506095_y.jpg" alt="Boards Dominator Physics" loading="lazy">
+          <div class="book-info">
+            <div class="book-subject">Physics</div>
+            <div class="book-title">Boards Dominator for Physics</div>
+            <div class="book-desc">Most repeated topics, PYQs, Mind Maps, Mock Tests & Topper Answer Sheets.</div>
+            <div class="book-footer">
+              <div class="book-price"><span class="price-free">FREE</span><span class="price-was">₹249</span></div>
+              <a href="https://wondermayank.github.io/" target="_blank" class="book-btn">Get Free ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="book-card">
+          <img class="book-cover" src="https://raw.githubusercontent.com/commercesehoga/books/main/photo_4922813557183810432_y.jpg" alt="Boards Dominator Chemistry" loading="lazy">
+          <div class="book-info">
+            <div class="book-subject">Chemistry</div>
+            <div class="book-title">Boards Dominator for Chemistry</div>
+            <div class="book-desc">IMP Questions, Chapter-wise PYQs, Mind Maps (colourful), 5 Sample Papers.</div>
+            <div class="book-footer">
+              <div class="book-price"><span class="price-free">FREE</span><span class="price-was">₹249</span></div>
+              <a href="https://wondermayank.github.io/" target="_blank" class="book-btn">Get Free ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="book-card">
+          <img class="book-cover" src="https://raw.githubusercontent.com/commercesehoga/books/main/photo_4927446211988491220_y.jpg" alt="Boards Dominator Biology" loading="lazy">
+          <div class="book-info">
+            <div class="book-subject">Biology</div>
+            <div class="book-title">Boards Dominator for Biology</div>
+            <div class="book-desc">Most repeated topics, Topper Format, 5 PYQ Papers, 3 Mock Tests.</div>
+            <div class="book-footer">
+              <div class="book-price"><span class="price-free">FREE</span><span class="price-was">₹249</span></div>
+              <a href="https://wondermayank.github.io/" target="_blank" class="book-btn">Get Free ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="book-card">
+          <img class="book-cover" src="https://raw.githubusercontent.com/commercesehoga/books/main/photo_6084659406831291790_y.jpg" alt="Boards Dominator Mathematics" loading="lazy">
+          <div class="book-info">
+            <div class="book-subject">Mathematics</div>
+            <div class="book-title">Boards Dominator for Mathematics</div>
+            <div class="book-desc">Mind Maps, Topper Answer Sheet, 5 Sample Papers + 5 PYQ Board Papers.</div>
+            <div class="book-footer">
+              <div class="book-price"><span class="price-free">FREE</span><span class="price-was">₹249</span></div>
+              <a href="https://wondermayank.github.io/" target="_blank" class="book-btn">Get Free ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="book-card">
+          <img class="book-cover" src="https://raw.githubusercontent.com/commercesehoga/books/main/photo_4909327286859926962_y.jpg" alt="Boards Dominator Physical Education" loading="lazy">
+          <div class="book-info">
+            <div class="book-subject">Physical Education</div>
+            <div class="book-title">Boards Dominator — Phy. Ed.</div>
+            <div class="book-desc">Chapter-wise PYQs, High Priority Topics, 5 Full Sample Papers, Cheat Sheet.</div>
+            <div class="book-footer">
+              <div class="book-price"><span class="price-free">FREE</span><span class="price-was">₹199</span></div>
+              <a href="https://wondermayank.github.io/" target="_blank" class="book-btn">Get Free ↗</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- COMMERCE -->
+    <div id="tab-commerce" class="tab-panel">
+      <div class="book-grid">
+
+        <div class="book-card">
+          <span class="ribbon">Bestseller</span>
+          <img class="book-cover" src="https://raw.githubusercontent.com/commercesehoga/books/main/photo_6334467078567431810_w.jpg" alt="Business Studies Sample Papers" loading="lazy">
+          <div class="book-info">
+            <div class="book-subject">Business Studies</div>
+            <div class="book-title">20+ CBSE Sample Papers — Business Studies</div>
+            <div class="book-desc">SQP, PYQs, Keywords, Topper Sheet, 50 IMP Q, One Page One Chapter, NCERT Underline.</div>
+            <div class="book-footer">
+              <div class="book-price"><span class="price-free">FREE</span><span class="price-was">₹299</span></div>
+              <a href="https://wondermayank.github.io/" target="_blank" class="book-btn">Get Free ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="book-card">
+          <img class="book-cover" src="https://raw.githubusercontent.com/commercesehoga/books/main/photo_6334467078567431827_y.jpg" alt="Economics Sample Papers" loading="lazy">
+          <div class="book-info">
+            <div class="book-subject">Economics</div>
+            <div class="book-title">20+ CBSE Sample Papers — Economics</div>
+            <div class="book-desc">CBSE SQP, 5-Year PYQs, IMP Dates, Topper Answer Sheet, Colourful Notes, Mindmap.</div>
+            <div class="book-footer">
+              <div class="book-price"><span class="price-free">FREE</span><span class="price-was">₹299</span></div>
+              <a href="https://wondermayank.github.io/" target="_blank" class="book-btn">Get Free ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="book-card">
+          <img class="book-cover" src="https://raw.githubusercontent.com/commercesehoga/books/main/photo_6052869020978973973_y.jpg" alt="Accounts Sample Papers" loading="lazy">
+          <div class="book-info">
+            <div class="book-subject">Accounts</div>
+            <div class="book-title">20+ CBSE Sample Papers — Accounts</div>
+            <div class="book-desc">SQP, PYQs, Mindmap, Topper Sheet, 50 IMP Q, One Page One Chapter, Head & Subhead.</div>
+            <div class="book-footer">
+              <div class="book-price"><span class="price-free">FREE</span><span class="price-was">₹299</span></div>
+              <a href="https://wondermayank.github.io/" target="_blank" class="book-btn">Get Free ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="book-card">
+          <img class="book-cover" src="https://raw.githubusercontent.com/commercesehoga/books/main/photo_4940627101547695096_y.jpg" alt="Economics Boards Topper Bundle" loading="lazy">
+          <div class="book-info">
+            <div class="book-subject">Economics</div>
+            <div class="book-title">Economics Boards Topper — 5-Book Bundle</div>
+            <div class="book-desc">Basic Learning → Advanced → Topper Toolkit → NCERT by Thunder → Final Booster.</div>
+            <div class="book-footer">
+              <div class="book-price"><span class="price-free">FREE</span><span class="price-was">₹499</span></div>
+              <a href="https://wondermayank.github.io/" target="_blank" class="book-btn">Get Free ↗</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- HUMANITIES -->
+    <div id="tab-humanities" class="tab-panel">
+      <div class="book-grid">
+
+        <div class="book-card">
+          <img class="book-cover" src="https://raw.githubusercontent.com/commercesehoga/books/main/photo_4951850989258476381_y__1_.jpg" alt="Boards Killer History" loading="lazy">
+          <div class="book-info">
+            <div class="book-subject">History</div>
+            <div class="book-title">Boards Killer — History</div>
+            <div class="book-desc">IMP Topics, PYQs, Top 50 MCQs, Case Studies, VBQ, Complete Notes, Topper Sheets.</div>
+            <div class="book-footer">
+              <div class="book-price"><span class="price-free">FREE</span><span class="price-was">₹249</span></div>
+              <a href="https://wondermayank.github.io/" target="_blank" class="book-btn">Get Free ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="book-card">
+          <img class="book-cover" src="https://raw.githubusercontent.com/commercesehoga/books/main/photo_4951850989258476381_y.jpg" alt="Boards Killer Political Science" loading="lazy">
+          <div class="book-info">
+            <div class="book-subject">Political Science</div>
+            <div class="book-title">Boards Killer — Political Science</div>
+            <div class="book-desc">IMP Topics, Top 50 MCQs & Case Studies, VBQ, Complete Notes, 3 Sample Papers.</div>
+            <div class="book-footer">
+              <div class="book-price"><span class="price-free">FREE</span><span class="price-was">₹249</span></div>
+              <a href="https://wondermayank.github.io/" target="_blank" class="book-btn">Get Free ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="book-card">
+          <img class="book-cover" src="https://raw.githubusercontent.com/commercesehoga/books/main/photo_4967569225237072796_y.jpg" alt="Boards Killer Geography" loading="lazy">
+          <div class="book-info">
+            <div class="book-subject">Geography</div>
+            <div class="book-title">Boards Killer — Geography</div>
+            <div class="book-desc">IMP Topics, PYQs, Top 50 MCQs & Case Studies, 3 Sample Papers, Topper Guide.</div>
+            <div class="book-footer">
+              <div class="book-price"><span class="price-free">FREE</span><span class="price-was">₹249</span></div>
+              <a href="https://wondermayank.github.io/" target="_blank" class="book-btn">Get Free ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="book-card">
+          <img class="book-cover" src="https://raw.githubusercontent.com/commercesehoga/books/main/photo_6113973954490862805_y.jpg" alt="Boards Killer English" loading="lazy">
+          <div class="book-info">
+            <div class="book-subject">English</div>
+            <div class="book-title">Boards Killer — English</div>
+            <div class="book-desc">Mindmap, Topper Sheet, How to Write, PYQs Grammar, Character Sketch, IMP by Thunder.</div>
+            <div class="book-footer">
+              <div class="book-price"><span class="price-free">FREE</span><span class="price-was">₹249</span></div>
+              <a href="https://wondermayank.github.io/" target="_blank" class="book-btn">Get Free ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="book-card">
+          <img class="book-cover" src="https://raw.githubusercontent.com/commercesehoga/books/main/photo_6127641665708166166_w.jpg" alt="Boards Pro Series Applied Maths" loading="lazy">
+          <div class="book-info">
+            <div class="book-subject">Applied Maths</div>
+            <div class="book-title">Boards Pro Series — Applied Maths</div>
+            <div class="book-desc">Digital Notes, Sample Paper, PYQs, Thunder Special, IMP Questions. Be A Topper Guide.</div>
+            <div class="book-footer">
+              <div class="book-price"><span class="price-free">FREE</span><span class="price-was">₹199</span></div>
+              <a href="https://wondermayank.github.io/" target="_blank" class="book-btn">Get Free ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="book-card">
+          <img class="book-cover" src="https://raw.githubusercontent.com/commercesehoga/books/main/photo_6122813864769425242_y.jpg" alt="Boards Pro Series Psychology" loading="lazy">
+          <div class="book-info">
+            <div class="book-subject">Psychology</div>
+            <div class="book-title">Boards Pro Series — Psychology</div>
+            <div class="book-desc">Digital & Handwritten Notes, Sample Paper, PYQs, Thunder Special, IMP Questions.</div>
+            <div class="book-footer">
+              <div class="book-price"><span class="price-free">FREE</span><span class="price-was">₹199</span></div>
+              <a href="https://wondermayank.github.io/" target="_blank" class="book-btn">Get Free ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="book-card">
+          <img class="book-cover" src="https://raw.githubusercontent.com/commercesehoga/books/main/photo_6129893465521851821_y.jpg" alt="Boards Pro Series Fine Arts" loading="lazy">
+          <div class="book-info">
+            <div class="book-subject">Fine Arts / Painting</div>
+            <div class="book-title">Boards Pro Series — Fine Arts</div>
+            <div class="book-desc">Digital Notes, Detail Notes, Sample Paper, PYQs, IMP Questions, Be A Topper Guide.</div>
+            <div class="book-footer">
+              <div class="book-price"><span class="price-free">FREE</span><span class="price-was">₹199</span></div>
+              <a href="https://wondermayank.github.io/" target="_blank" class="book-btn">Get Free ↗</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- QUESTION BANK -->
+    <div id="tab-qbank" class="tab-panel">
+      <div class="book-grid">
+
+        <div class="book-card">
+          <span class="ribbon">5000+ Q</span>
+          <img class="book-cover" src="https://raw.githubusercontent.com/commercesehoga/books/main/photo_6129401245089861200_y.jpg" alt="Boards Pro Series Applied Maths QB" loading="lazy">
+          <div class="book-info">
+            <div class="book-subject">Applied Maths</div>
+            <div class="book-title">Boards Pro Series — Applied Maths QB</div>
+            <div class="book-desc">PYQs, Chapterwise Q, Most Expected 2025-26, Case Study, Assertion & Reasoning.</div>
+            <div class="book-footer">
+              <div class="book-price"><span class="price-free">FREE</span><span class="price-was">₹349</span></div>
+              <a href="https://wondermayank.github.io/" target="_blank" class="book-btn">Get Free ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="book-card">
+          <span class="ribbon">5000+ Q</span>
+          <img class="book-cover" src="https://raw.githubusercontent.com/commercesehoga/books/main/photo_6129893465521851791_y.jpg" alt="Boards Pro Series English QB" loading="lazy">
+          <div class="book-info">
+            <div class="book-subject">English</div>
+            <div class="book-title">Boards Pro Series — English QB</div>
+            <div class="book-desc">Latest CBSE Pattern, PYQs, Chapterwise, Competency-Based, Literature & Writing.</div>
+            <div class="book-footer">
+              <div class="book-price"><span class="price-free">FREE</span><span class="price-was">₹349</span></div>
+              <a href="https://wondermayank.github.io/" target="_blank" class="book-btn">Get Free ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="book-card">
+          <span class="ribbon">5000+ Q</span>
+          <img class="book-cover" src="https://raw.githubusercontent.com/commercesehoga/books/main/photo_6134015448715038443_y.jpg" alt="Boards Pro Series Mathematics QB" loading="lazy">
+          <div class="book-info">
+            <div class="book-subject">Mathematics</div>
+            <div class="book-title">Boards Pro Series — Mathematics QB</div>
+            <div class="book-desc">5000+ Questions, Chapterwise, Case Study, Assertion & Reasoning, Best Question Bank.</div>
+            <div class="book-footer">
+              <div class="book-price"><span class="price-free">FREE</span><span class="price-was">₹349</span></div>
+              <a href="https://wondermayank.github.io/" target="_blank" class="book-btn">Get Free ↗</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="editorial-band">
+  <div class="container">
+    <p class="section-label" style="color:var(--gold-light);">100% Free — Always</p>
+    <h2 class="section-title" style="margin-bottom:16px;">Don't pay for study materials.</h2>
+    <p class="section-sub" style="margin-bottom:40px;">Every book, every paper, every question bank — available at zero cost. Thunderstudy believes quality education should be free.</p>
+    <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+      <a href="https://wondermayank.github.io/" target="_blank" class="btn-primary">Download All Books Free ↗</a>
+      <a href="https://commercesehoga.github.io/dashboard" target="_blank" class="btn-ghost">Practice on CBT Platform ↗</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">Galaxy <span>Official</span></div>
+      <p class="footer-tagline">Premium CBSE Class 12 study materials by Thunderstudy. Free forever. Built by toppers, for toppers.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Platform</h4>
+      <a href="https://wondermayank.github.io/" target="_blank">All Books</a>
+      <a href="https://commercesehoga.github.io/dashboard" target="_blank">CBT Mock Platform</a>
+    </div>
+    <div class="footer-col">
+      <h4>Streams</h4>
+      <a href="#science" onclick="showTab('science')">Science</a>
+      <a href="#commerce" onclick="showTab('commerce')">Commerce</a>
+      <a href="#humanities" onclick="showTab('humanities')">Humanities</a>
+      <a href="#qbank" onclick="showTab('qbank')">Question Bank</a>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <a href="https://wondermayank.github.io/terms" target="_blank">Terms</a>
+      <a href="https://wondermayank.github.io/privacy" target="_blank">Privacy</a>
+      <a href="https://wondermayank.github.io/disclaimer" target="_blank">Disclaimer</a>
+      <a href="https://wondermayank.github.io/contact" target="_blank">Contact</a>
+      <a href="https://commercesehoga.github.io/help" target="_blank">Help / Donate</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2026 Galaxy Official · Thunderstudy by Wonder Mayank. All rights reserved.</span>
+    <span class="footer-copy">Made with ♥ for CBSE students.</span>
+  </div>
+</footer>
+
+<script>
+function showTab(name) {
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  document.getElementById('tab-' + name).classList.add('active');
+  const idx = ['science','commerce','humanities','qbank'].indexOf(name);
+  document.querySelectorAll('.tab-btn')[idx].classList.add('active');
+  document.getElementById('class12').scrollIntoView({behavior:'smooth', block:'start'});
+}
+</script>
+</body>
+</html>
